@@ -47,6 +47,13 @@ services:
       timeout: 10s
       retries: 3
       start_period: 40s
+# 下载 docker-compose.yml 文件后执行
+docker-compose up -d
+
+# 访问应用
+# 打开浏览器访问 http://localhost:5000
+
+3. 从源码构建Docker镜像
 # 克隆项目
 git clone https://github.com/your-username/finance-news-aggregator.git
 cd finance-news-aggregator
@@ -60,8 +67,8 @@ docker run -d -p 5000:5000 --name finance-aggregator finance-news-aggregator
 # 访问应用
 # 打开浏览器访问 http://localhost:5000
 
-# 下载 docker-compose.yml 文件后执行
-docker-compose up -d
 
-# 访问应用
-# 打开浏览器访问 http://localhost:5000
+本地运行git clone https://github.com/your-username/finance-news-aggregator.git
+cd finance-news-aggregator
+pip install -r requirements.txt
+python app.py
