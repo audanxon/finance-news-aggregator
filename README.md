@@ -23,7 +23,7 @@
 ### 使用Docker部署（推荐）
 
 #### 1. 使用预构建的Docker镜像
-
+docker run -d -p 5000:5000 --name finance-aggregator your-username/finance-news-aggregator:latest
 #### 2. 使用Docker Compose
 
 ```bash
